@@ -61,6 +61,8 @@ public:
 
 int main()
 {
+	object obj;
 	obj.main_menu();
 	return 0;
 }
+piot
