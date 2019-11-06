@@ -7,7 +7,7 @@ using namespace std;
 template<class C>class object {
 public:
 	template<typename T>
-	static void show_list(map<string, string> dict)
+	static void show_list(map<T, T> dict)
 	{
 		cout << "................................" << endl;
 		cout << "\nThe map dictionary is : \n";
@@ -21,7 +21,7 @@ public:
 	}
 	template<typename T> T run(T choice)
 	{
-		static map<string, string> map_of_words;
+		map<string, string> map_of_words;
 		map_of_words.insert(pair<string, string>("Krowa", "Cow"));
 
 		if (choice == 1)
@@ -47,7 +47,7 @@ public:
 		}
 		if (choice == 3)
 		{
-			show_list<int>(map_of_words);
+			show_list<int,string>(map_of_words);
 			return main_menu<int>();
 		}
 		if (choice == 4) { return 0; }
