@@ -10,7 +10,7 @@ private:
 	double mianownik;
 public:
 	Fraction(){//constructor
-		/*'this' wskazuje na adres pamiêci obecnego obiektu (klasa object) */
+		/*'this' wskazuje na adres pamiï¿½ci obecnego obiektu (klasa object) */
 		this->liczebnik = 0;
 		this->mianownik= 0;	
 	}
@@ -18,7 +18,7 @@ public:
 		printf("\n %lf , %lf\n",this->liczebnik,this->mianownik);
 	}
 	void get_data(){
-		printf("\nEnter liczebnik: ");
+		printf("\nEnter licznik: ");
 		cin>>liczebnik;
 		printf("\nEnter mianownik: ");
 		cin>>mianownik;
@@ -47,8 +47,5 @@ int main(void){
 	Sum=A*B;
 	Sum.show();
 	
-	
-
-
 	return true;
 }
